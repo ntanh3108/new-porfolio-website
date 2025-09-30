@@ -7,8 +7,8 @@ const SocialActivities = () => {
 
   const slides = [
     {
-      type: 'video',
-      src: '/public/all-activities.mp4',
+      type: 'youtube',
+      src: 'https://www.youtube.com/embed/V4lTkkQJ5lM?si=0tPMAk8GgIL7x1Fg',
       note: 'Distributing charity meals to the homeless'
     },
     {
@@ -76,6 +76,15 @@ const SocialActivities = () => {
           <div className="slide-container">
             {slides[currentSlide].type === 'image' ? (
               <img src={slides[currentSlide].src} alt={`Social activity ${currentSlide + 1}`} />
+            ) : slides[currentSlide].type === 'youtube' ? (
+              <iframe
+                src={slides[currentSlide].src}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
             ) : (
               <video src={slides[currentSlide].src} controls />
             )}

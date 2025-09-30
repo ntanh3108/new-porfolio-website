@@ -1981,15 +1981,22 @@ body {
 }
 
 .slide-container img,
-.slide-container video {
+.slide-container video,
+.slide-container iframe {
   width: 100%;
   height: 100%;
   object-fit: contain;
   background: #000000;
   display: block;
+  border: none;
 }
 
 .slide-container video {
+  outline: none;
+}
+
+.slide-container iframe {
+  border: none;
   outline: none;
 }
 
@@ -2272,7 +2279,8 @@ body {
   }
 
   .slide-container img,
-  .slide-container video {
+  .slide-container video,
+  .slide-container iframe {
     object-fit: contain;
   }
 
