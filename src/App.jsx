@@ -1,6 +1,9 @@
 import { useState, useEffect, useMemo } from 'react'
 import './App.css'
 import avatarImg from './assets/avatar.jpg'
+import education1Img from "./assets/education1.jpg"
+import education2Img from "./assets/education2.jpg"
+import workImg from "./assets/work.png"
 
 const SocialActivities = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -270,7 +273,7 @@ const WorkExperience = () => {
       company: "ABC Corporation",
       location: "Ho Chi Minh City, Vietnam",
       description: "Managed client relationships and achieved sales targets\nDeveloped marketing strategies for new products\nConducted market research and competitor analysis\nAchieved 120% of quarterly sales targets",
-      image: "/src/assets/work.png"
+      image: workImg
     }
   ]
 
@@ -338,7 +341,7 @@ const EducationTimeline = () => {
       major: "Gifted: Biology",
       school: "Hoang Le Kha Gifted High School, Tay Ninh Province, Vietnam",
       description: "",
-      image: "/src/assets/education1.jpg"
+      image: education1Img
     },
     {
       period: "09/2020 - 09/2024",
@@ -346,7 +349,7 @@ const EducationTimeline = () => {
       major: "Major: Chemistry",
       school: "University of Science - VNUHCM, Ho Chi Minh City, Vietnam",
       description: "Supervisor: Assoc. Prof. Le Thanh Nguyen, Huynh.\nClassification: Very Good\nGPA: 3.4/4.0 (8.0/10)\nPublished 4 papers Q1",
-      image: "/src/assets/education1.jpg"
+      image: education2Img
     }
   ]
 
