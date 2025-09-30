@@ -268,9 +268,9 @@ const WorkExperience = () => {
 
   const workData = [
     {
-      period: "01/2023 - 12/2023",
-      position: "Sales Representative",
-      company: "ABC Corporation",
+      period: "11/2024 - Present",
+      position: "Saleswoman",
+      company: "Sou Viet Company Limited",
       location: "Ho Chi Minh City, Vietnam",
       description: "Managed client relationships and achieved sales targets\nDeveloped marketing strategies for new products\nConducted market research and competitor analysis\nAchieved 120% of quarterly sales targets",
       image: workImg
@@ -298,8 +298,8 @@ const WorkExperience = () => {
               </div>
               <div className="period-info">
                 <div className="period-degree">{item.position}</div>
-                <div className="period-major">{item.company}</div>
-                <div className="period-school">{item.location}</div>
+                <div className="period-school">{item.company}</div>
+                <div className="period-major">{item.location}</div>
               </div>
             </div>
           ))}
@@ -408,7 +408,7 @@ const EducationTimeline = () => {
 }
 
 function App() {
-  const jobTitles = useMemo(() => ['Salewoman', 'Researcher', 'Tutor'], [])
+  const jobTitles = useMemo(() => ['Saleswoman', 'Researcher', 'Tutor'], [])
   const [currentJobIndex, setCurrentJobIndex] = useState(0)
   const [displayedText, setDisplayedText] = useState('')
   const [isTyping, setIsTyping] = useState(true)
